@@ -1,7 +1,5 @@
 package lab4;
 
-import java.math.BigDecimal;
-
 public class Program {
 
 	public static void main(String[] args) {
@@ -30,9 +28,12 @@ public class Program {
 		System.out.println("\n---Part-2--Money--------\n");
 		
 		lab4.part2money.account("100", "5");
+		
+		System.out.println("\n---Part-3--Nested-Loop--\n");
+		
+		lab4.Part3.multiplicationTable();
 
 	}
-
 
 	
 
