@@ -32,6 +32,10 @@ public class Program {
 		System.out.println("\n---Part-3--Nested-Loop--\n");
 		
 		lab4.Part3.multiplicationTable();
+		
+		System.out.println("\n---Part-4--Card-Game---\n");
+		
+		lab4.CardGame.result();
 
 	}
 

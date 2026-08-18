@@ -1,12 +1,14 @@
 package lab4;
 
+import java.text.MessageFormat;
+
 public class Part3 {
 
 	public static void multiplicationTable() {
 
 		String name = "multiplicationTable";
 		int padding = (56 - name.length()) / 2;
-		String centeredName = String.format("%" + padding + "s%s%" + padding + "s", "", name, "");
+		String centeredName = String.format(MessageFormat.format("%{0}s%s%{1}s", padding, padding), "", name, "");
 
 		System.out.println(centeredName);
 
@@ -16,7 +18,7 @@ public class Part3 {
 
 		for (int row = 0; row <= 10; row++) {
 
-			System.out.println("");
+			System.out.println();
 
 			for (int col = 0; col <= 10; col++) {
 
