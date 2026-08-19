@@ -1,29 +1,51 @@
 package oo2;
 
-public class Ball {
+enum ShapeType {
+	Rectangle,
+	ThreeDRectangle,
+	RoundRectangle,
+	Oval,
+	Arc
+};
+
+public class Shape {
 
 	public int x;
 	public int y;
 	public int w;
 	public int h;
+	
 	private int dirX;
 	private int dirY;
+	private ShapeType shapeType;
 
+	static int worldW;
+	static int worldH;
 	
-	public Ball(int x, int y, int w, int h) {
+	public ShapeType getShapeType() {
+		return shapeType;
+	}
+	
+	public Shape(int x, int y, int w, int h) {
 		this.x = x;
 		this.y = y;
 		this.w = w;
 		this.h = h;
 	}
 
-	public Ball(int x, int y, int w, int h, int dirX, int dirY) {
+	public Shape(int x, int y, int w, int h, int dirX, int dirY, ShapeType shapeType) {
 		this.x = x;
 		this.y = y;
 		this.w = w;
 		this.h = h;
 		this.dirX = dirX;
 		this.dirY = dirY;
+		this.shapeType = shapeType;
+	}
+	
+	public static void setWorld(int w, int h) {
+		worldW = w;
+		worldH = h;
 	}
 
 	public void move() {
