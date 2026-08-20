@@ -13,14 +13,16 @@ public class ShoppingBasket {
 		return items;
 	}
 
-	@Override
-	public String toString() {
-		StringBuilder details = new StringBuilder(
-				"ShoppingBasket with total of £" + total + " for " + items.size() + " items:\n");
-		for (ShoppingBasketItem item : items) {
-			details.append(item.getDetails().indent(2));
-		}
-		return details.toString();
-	}
+    @Override
+    public String toString() {
+        StringBuilder details = new StringBuilder(
+                "\nShoppingBasket with " + items.size() + " items:\n"
+        );
+        for (ShoppingBasketItem item : items) {
+            details.append(item.getDetails().indent(2));
+        }
+        details.append("\nTotal: £" + total);
+        return details.toString();
+    }
 
 }
