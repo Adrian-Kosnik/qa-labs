@@ -13,7 +13,7 @@ public class MoviesStream {
 		// TODO: Solve the tasks here
 		
 		movies.stream().filter(movie -> movie.getGenre() == "Sci-Fi")
-					   .sorted()
+					   .sorted(movies.sort(movie.getRating())
 					   
 					   
 					   
