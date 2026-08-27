@@ -1,0 +1,32 @@
+BrokenAuditApp Change list
+--------------------------
+
+Main Issues:
+1) Datetime per event rather than per batch. 
+2) One event per line. 
+3) Append-only log please. 
+4) timestamp - standardised iso type zulu time. 
+
+
+Minor issues:
+2) file Modularity + breaking up into small methods
+3) Remove duplicated console output
+4) Decide on console/debugging output. 
+5) Fix naming convention throughout. (class, methods, variables)
+6) Validate the user is known + add to the log. 
+7) Light error handling avoid ioexception handling everything. 
+8) Add headers for log data. 
+9) json for the data. 
+10) access-levels
+11) add id per event use uuid.
+12) try-with for file handling. 
+13) comments/jdocs
+14) add team name to log line
+
+
+Stretch:
+- research and replace with a java logging api 
+- Read the data from external file --input + validate incoming data. 
+- Choose a file to write the output to. 
+
+Maybe some tests
