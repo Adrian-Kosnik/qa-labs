@@ -84,19 +84,19 @@ public class BrokenAuditAppExa {
     }
 
     static String formatAuditEvent(AuditEvent event){
-        // return event.eventId()
-        //         + "," + event.timestamp()
-        //         + "," + event.team()
-        //         + "," + event.userId()
-        //         + "," + event.result()
-        //         + "," + event.knownUser();
-        //or
-        return "id=" + event.eventId()
-                + " date=" + event.timestamp()
-                + " team=" + event.team()
-                + " user=" + event.userId()
-                + " result=" + event.result()
-                + " known=" + event.knownUser();
+         return event.eventId()
+                 + "," + event.timestamp()
+                 + "," + event.team()
+                 + "," + event.userId()
+                 + "," + event.result()
+                 + "," + event.knownUser();
+//        or
+//        return "id=" + event.eventId()
+//                + " date=" + event.timestamp()
+//                + " team=" + event.team()
+//                + " user=" + event.userId()
+//                + " result=" + event.result()
+//                + " known=" + event.knownUser();
     }
 
     static void run() throws IOException {
@@ -107,7 +107,7 @@ public class BrokenAuditAppExa {
         }
 
     }
-    public static void main(String[] args){
+    static void main(String[] args){
 
         try {
             run();

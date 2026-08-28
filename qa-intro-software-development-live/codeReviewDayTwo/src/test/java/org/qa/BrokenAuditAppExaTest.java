@@ -53,5 +53,5 @@ public class BrokenAuditAppExaTest {
 
 
     // known_user - user-100 returns true user999 returns false
-    // failed attempt = not_ok, passed attemot = OK.
+    // failed attempt = not_ok, passed attempt = OK.
 }
